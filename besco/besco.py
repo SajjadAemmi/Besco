@@ -1,7 +1,7 @@
 from typing import Any
 
 
-class PlantsAI:
+class Besco:
     def __init__(self):
         pass
 

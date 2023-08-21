@@ -22,23 +22,23 @@ pre_install()
 
 
 setup(
-    name='PlantsAI',
+    name='Besco',
     version='0.0.3',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    packages=["plantsai"],
+    packages=["besco"],
     setup_requires=[
         'numpy'
     ],
-    url='https://github.com/PlantsAI/plantsai',
+    url='https://github.com/Besco/besco',
     license='',
     author='Sajjad Aemmi',
     author_email='sajjadaemmi@gmail.com',
     description='A powerful plant identifier to identify flowers, leaves, trees, and more in seconds! 🌱',
     include_package_data=True,
-    # package_data={"plantsai": ['main.ui']},
+    # package_data={"besco": ['main.ui']},
     install_requires=post_install(),
     entry_points={
-        "console_scripts": ["plantsai=plantsai.plantsai:main"],
+        "console_scripts": ["besco=besco.besco:main"],
     },
 )

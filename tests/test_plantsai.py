@@ -1,16 +1,16 @@
 import unittest
 
 
-class TestPlantsAI(unittest.TestCase):
+class TestBesco(unittest.TestCase):
     """
     high level support for doing this and that.
     """
     def test_import(self):
-        import plantsai
+        import besco
 
     def test_version(self):
-        import plantsai
-        print(plantsai.__version__)
+        import besco
+        print(besco.__version__)
 
     def test_classifcation(self):
         class_gt = 0
