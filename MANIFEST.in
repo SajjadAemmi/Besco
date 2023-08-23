@@ -1,6 +1,7 @@
 # Include the README
 include *.md
 include requirements.txt
+include besco/azg.svg
 
 # Include setup.py
 include setup.py
