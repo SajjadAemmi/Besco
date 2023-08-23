@@ -1,7 +1,7 @@
 # Include the README
 include *.md
 include requirements.txt
-include azg.svg
+recursive-include *.svg
 
 # Include setup.py
 include setup.py

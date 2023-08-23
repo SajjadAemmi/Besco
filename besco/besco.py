@@ -1,4 +1,5 @@
 from typing import Any
+import pkg_resources
 import turtle
 import svgpathtools
 
@@ -51,9 +52,8 @@ class Besco:
         turtle.done()
 
 
-
 def main():
-    Besco.draw("./azg.svg")
+    Besco.draw(pkg_resources.resource_filename('besco', "./azg.svg"))
 
 
 if __name__ == '__main__':

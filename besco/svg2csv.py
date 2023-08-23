@@ -2,7 +2,7 @@ import csv
 import svgpathtools
 
 # Load SVG file
-svg_file = "2023_08_23.svg"
+svg_file = "azg.svg"
 output_csv = "output.csv"
 
 # Convert SVG paths to CSV format
