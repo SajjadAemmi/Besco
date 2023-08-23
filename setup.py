@@ -23,7 +23,7 @@ pre_install()
 
 setup(
     name='besco',
-    version='0.0.2',
+    version='0.0.3',
     long_description=long_description,
     long_description_content_type='text/markdown',
     packages=["besco"],
@@ -36,6 +36,7 @@ setup(
     author_email='sajjadaemmi@gmail.com',
     description='Besco is not only a Python package, Besco is a way of life.',
     include_package_data=True,
+    package_data={"besco": ['azg.svg']},
     install_requires=post_install(),
     entry_points={
         "console_scripts": ["besco=besco.besco:main"],
