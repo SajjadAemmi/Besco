@@ -2,7 +2,7 @@ import csv
 import turtle
 
 def draw_svg_from_csv(csv_file):
-    turtle.speed(1)  # Adjust speed as needed
+    turtle.speed(0)  # Adjust speed as needed
 
     with open(csv_file, 'r') as csv_file:
         csv_reader = csv.reader(csv_file)

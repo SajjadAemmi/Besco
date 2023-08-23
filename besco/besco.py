@@ -14,6 +14,8 @@ class Besco:
 
         # Initialize Turtle graphics
         turtle.speed(0)
+        turtle.title("Drawing Besco")
+        turtle.setup(420, 420)
 
         # Convert SVG paths to Turtle commands
         for path, attrib in zip(paths, attributes):
@@ -29,16 +31,16 @@ class Besco:
             for segment in path:
                 if isinstance(segment, svgpathtools.Line):
                     turtle.penup()
-                    turtle.goto(segment.start.real, -segment.start.imag)
+                    turtle.goto(segment.start.real - 210, -segment.start.imag + 210)
                     turtle.pendown()
-                    turtle.goto(segment.end.real, -segment.end.imag)
+                    turtle.goto(segment.end.real - 210, -segment.end.imag + 210)
                 elif isinstance(segment, svgpathtools.CubicBezier):
                     turtle.penup()
-                    turtle.goto(segment.start.real, -segment.start.imag)
+                    turtle.goto(segment.start.real - 210, -segment.start.imag + 210)
                     turtle.pendown()
-                    turtle.goto(segment.control1.real, -segment.control1.imag)
-                    turtle.goto(segment.control2.real, -segment.control2.imag)
-                    turtle.goto(segment.end.real, -segment.end.imag)
+                    turtle.goto(segment.control1.real - 210, -segment.control1.imag + 210)
+                    turtle.goto(segment.control2.real - 210, -segment.control2.imag + 210)
+                    turtle.goto(segment.end.real - 210, -segment.end.imag + 210)
                 # Add more cases for other segment types as needed
 
             if 'fill' in attrib:
@@ -51,7 +53,7 @@ class Besco:
 
 
 def main():
-    Besco.draw("2023_08_23.svg")
+    Besco.draw("besco/azg.svg")
 
 
 if __name__ == '__main__':

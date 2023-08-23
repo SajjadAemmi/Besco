@@ -22,21 +22,20 @@ pre_install()
 
 
 setup(
-    name='Besco',
-    version='0.0.3',
+    name='besco',
+    version='0.0.1',
     long_description=long_description,
     long_description_content_type='text/markdown',
     packages=["besco"],
     setup_requires=[
-        'numpy'
+        'svgpathtools'
     ],
-    url='https://github.com/Besco/besco',
+    url='https://github.com/SajjadAemmi/besco',
     license='',
     author='Sajjad Aemmi',
     author_email='sajjadaemmi@gmail.com',
     description='A powerful plant identifier to identify flowers, leaves, trees, and more in seconds! 🌱',
     include_package_data=True,
-    # package_data={"besco": ['main.ui']},
     install_requires=post_install(),
     entry_points={
         "console_scripts": ["besco=besco.besco:main"],
