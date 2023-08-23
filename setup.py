@@ -23,7 +23,7 @@ pre_install()
 
 setup(
     name='besco',
-    version='0.0.1',
+    version='0.0.2',
     long_description=long_description,
     long_description_content_type='text/markdown',
     packages=["besco"],
@@ -34,7 +34,7 @@ setup(
     license='',
     author='Sajjad Aemmi',
     author_email='sajjadaemmi@gmail.com',
-    description='A powerful plant identifier to identify flowers, leaves, trees, and more in seconds! 🌱',
+    description='Besco is not only a Python package, Besco is a way of life.',
     include_package_data=True,
     install_requires=post_install(),
     entry_points={
