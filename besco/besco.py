@@ -53,7 +53,7 @@ class Besco:
 
 
 def main():
-    Besco.draw("./besco/azg.svg")
+    Besco.draw("./azg.svg")
 
 
 if __name__ == '__main__':
